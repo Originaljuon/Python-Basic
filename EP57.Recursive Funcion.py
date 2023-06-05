@@ -38,7 +38,7 @@ addNumber(0)
 
 def summation(number):
 	if number==1:
-		return int() # บอกว่าถ้า number มีค่าเท่ากับ 1 ให้กระโดดออกมา (จบโปรแกรม)
+		return number # บอกว่าถ้า number มีค่าเท่ากับ 1 ให้กระโดดออกมา (จบโปรแกรม)
 	else :
 		return number+summation(number-1) # ค่า default number = 5 แต่พอมีการเรียกใช้ฟังก์ชั่นในที่นี้คือ summation ค่าในส่วนของ number จะลดลงไปเรื่อยๆจนพอมาถึง 1 ก็จะออกจะปิดโปรแกรม
 
