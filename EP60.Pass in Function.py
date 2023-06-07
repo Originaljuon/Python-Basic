@@ -4,14 +4,14 @@ def getName():
     pass # แค่พิมพ์ว่า pass !! เสร็จแล้ว !! โปรแกรมก็จะ Run ผ่านไปก่อน
 def getNamex(name):
     print("Hello , ",name)
-def getNamexx(name):
+def getNamexx(name): # เป็นไอเดียรูปแบบหนึ่งในการสรรค์สร้างโดยมี Pass เข้ามาในส่วนช่วยเจตนาเพื่อคัดกรองข้อมูล # ไม่ใช่เหมือนตอนแรกที่เจตนาเพราะยังคิดเนื้อหาภายในฟังก์ชั่นไม่ได้
     if name == "Kong":
         print("ยินดีด้วย")
     else :
         pass
 
 
-getNamexx("Jojo")
-getNamexx("Kong")
 getName()
 getNamex("KongRuksiam")
+getNamexx("Jojo")
+getNamexx("Kong")

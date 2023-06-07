@@ -42,4 +42,3 @@ result=z(4)
 
 print(y)
 print(result)
-print(z)
