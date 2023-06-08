@@ -13,7 +13,7 @@ def b():
 วิธีสร้าง Recursive Function
 1. หาจุดวนซ้ำ
 2. หาจุดออกจาก function (return)
-3.ต้องมี parameter
+3. ต้องมี parameter
 
 """
 # ถ้าตั้งโจทย์ 1-5 โดยไม่ใช้ คำสั่ง loop
@@ -27,10 +27,10 @@ def c():
 
 
 def addNumber(number):
-	if number==5:
-		return # มีการกำหนดจุดวนซ้ำ
 	print(number+1) # 0
 	number+=1 #1
+	if number==5:
+		return # มีการกำหนดจุดวนซ้ำ
 	addNumber(number)
 
 
