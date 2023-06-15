@@ -9,7 +9,7 @@ try:
 	# 	fw.writelines(studentid+"\t"+score+"\n") # \t = เว้นช่องว่าง 1 ช่อง
 	# fw.close
 	fr=open("Score.txt","r",encoding="utf-8")
-	fw=open("Grade.txt","w",encoding="utf-8")
+	fw=open("Grade.txt","w",encoding="utf-8") # สังเกตว่าใช้ "w" เพราะถ้ามีการแก้คะแนนที่ ไฟล์.txt จะมีการรื้อใหม่ทั้งหมด กรณีนี้จะเห็นได้ว่า "w" ดีกว่า "a"
 	grade=None
 	for line in fr.readlines():
 		score=line[-3:].strip() # รหัส คะแนน # ข้อสังเกต ถ้าเขียน index ว่า [-3:-1] คนที่ได้ 100 คะแนน จะถูกระบุแค่ 10 ที่ถูกควรเขียนว่า "[-3:]"
@@ -26,7 +26,7 @@ try:
 		else:
 			grade="F"
 		print("รหัส = ",studenid," คะแนน = ",score ," เกรดที่ได้ = ",grade)
-		fw.writelines(studenid+"\t"+str(score)+"\t"+grade+"\n")
+		fw.writelines(studenid+"\t"+str(score)+"\t"+grade+"\n") # \t = เว้นวรรค 1 ช่อง \n = ขึ้นบรรทัดใหม่ # ต้องมีการแปลง score กลับมาเป็น str อีกหนึ่งรอบ
 	fw.close()
 
 except Exception as e:
